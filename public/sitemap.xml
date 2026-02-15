@@ -8,25 +8,4 @@
     <priority>1.0</priority>
   </url>
 
-  <url>
-    <loc>https://rohit-chavan-portfolio.vercel.app/#about</loc>
-    <lastmod>2026-02-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://rohit-chavan-portfolio.vercel.app/#projects</loc>
-    <lastmod>2026-02-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://rohit-chavan-portfolio.vercel.app/#contact</loc>
-    <lastmod>2026-02-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
 </urlset>
