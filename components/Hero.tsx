@@ -7,13 +7,17 @@ const Hero: React.FC = () => {
       className="relative min-h-screen flex items-center bg-slate-900 text-white overflow-hidden pt-24 md:pt-0"
     >
       {/* Safe Background decorations */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+     {/* Background decorations */}
+<div className="absolute inset-0 overflow-hidden pointer-events-none">
 
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-600/10 hidden md:block"></div>
+  {/* Tilted Right Section */}
+  <div className="absolute top-0 right-0 w-[60%] h-full bg-blue-600/10 transform skew-x-[-12deg] translate-x-32 hidden md:block"></div>
 
-        <div className="absolute bottom-0 left-0 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"></div>
+  {/* Bottom Glow */}
+  <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
 
-      </div>
+</div>
+
 
 
       <div className="container mx-auto px-6 relative z-10">
