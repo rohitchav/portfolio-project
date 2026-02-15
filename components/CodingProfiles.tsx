@@ -21,7 +21,11 @@ const CodingProfiles = () => {
   }
 
   return (
-   <section className="py-16 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+  <section
+  id="coding"
+  className="py-16 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white"
+>
+
   <div className="max-w-5xl mx-auto px-6">
 
     {/* Header */}
@@ -75,20 +79,33 @@ const CodingProfiles = () => {
       </div>
 
       {/* Bottom Stats */}
-      <div className="flex justify-between text-sm text-gray-400">
-        <div>
-          Acceptance Rate:{" "}
-          <span className="text-blue-400 font-medium">
-            {stats.acceptanceRate}%
-          </span>
-        </div>
-        <div>
-          Ranking:{" "}
-          <span className="text-purple-400 font-medium">
-            {stats.ranking.toLocaleString()}
-          </span>
-        </div>
-      </div>
+<div className="flex justify-between text-sm text-gray-400 mb-8">
+  <div>
+    Acceptance Rate:{" "}
+    <span className="text-blue-400 font-medium">
+      {stats.acceptanceRate}%
+    </span>
+  </div>
+  <div>
+    Ranking:{" "}
+    <span className="text-purple-400 font-medium">
+      {stats.ranking.toLocaleString()}
+    </span>
+  </div>
+</div>
+
+{/* Profile Button */}
+<div className="text-center">
+  <a
+    href="https://leetcode.com/rohitchavan0"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block bg-yellow-500 hover:bg-yellow-600 transition px-6 py-2 rounded-full text-sm font-semibold text-black shadow-md"
+  >
+    View LeetCode Profile →
+  </a>
+</div>
+
 
     </div>
   </div>
