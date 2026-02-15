@@ -10,6 +10,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { Analytics } from "@vercel/analytics/react";
 import VisitorCounter from "./components/VisitorCounter";
+import CodingProfiles from "./components/CodingProfiles";
 
 
 const App: React.FC = () => {
@@ -17,17 +18,19 @@ const App: React.FC = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow">
+
         <Hero />
         <About />
         <Skills />
+        <CodingProfiles />
         <Projects />
         <Career />
         <Contact />
-       
+
       </main>
       <VisitorCounter />
       <Footer />
-       <Analytics />
+      <Analytics />
     </div>
   );
 };
