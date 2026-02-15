@@ -1,9 +1,4 @@
-import type { VercelRequest, VercelResponse } from '@vercel/node';
-
-export default async function handler(
-  req: VercelRequest,
-  res: VercelResponse
-) {
+export default async function handler(req, res) {
   try {
     const response = await fetch("https://leetcode.com/graphql", {
       method: "POST",
@@ -30,8 +25,8 @@ export default async function handler(
     });
 
     const data = await response.json();
-
     res.status(200).json(data);
+
   } catch (error) {
     res.status(500).json({ error: "Failed to fetch data" });
   }
